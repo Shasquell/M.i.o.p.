@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1721464636 source:c:\users\hosein\documents\code blocks\lang_proejct\project lang\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<string.h>
+	<vector>
+	"declarations.h"
+
+1721317644 source:c:\users\hosein\documents\code blocks\lang_proejct\project lang\icon.rc
+
+1721464322 source:c:\users\hosein\documents\code blocks\lang_proejct\project lang\definitions.cpp
+	"declarations.h"
+	<iostream>
+	<string>
+	<string.h>
+	<vector>
+
+1721464322 c:\users\hosein\documents\code blocks\lang_proejct\project lang\declarations.h
+	<string>
+	<string.h>
+	<vector>
+

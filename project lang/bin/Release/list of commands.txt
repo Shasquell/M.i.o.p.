@@ -1,0 +1,35 @@
+out \"string\"
+
+in [variable name]
+
+add [amount/numeral data] [variable name]
+
+subtract [amount/numeral data] [variable name]
+
+multiply [variable name] [numeral data]
+
+divide [variable name] [numeral data]
+
+divide [variable name] [numeral data]
+
+delete [variable name]
+
+take [variable name] [from index] [amount]
+
+set [variable name] [optional:content]
+
+copy [variable name] [variable name]
+
+insert [variable name or string data] [variable name] [at index]
+
+make [variable name] [optional:content]
+
+system [variable name]
+
+is [variable name or any data] [operator] [variable name or any data] [variable name]
+
+jumpif [variable name or any data] [operator] [variable name or any data] [to line]
+
+jump [to line]
+
+length [variable name] [variable name]

@@ -79,7 +79,9 @@ int main(int argc,char*argv[])
     }
     else
         goto Start;
-    if((command==raw_entry)||((command+" ")==raw_entry))
+    if(command=="\\")
+        goto Start;
+    if(command=="")
         goto Start;
     command_id = detect(command);//detects the command and returns command ID number for the switch
     if(command_id==0)
@@ -100,10 +102,6 @@ int main(int argc,char*argv[])
         semp[0] = detect(semp);
         switch(semp[0])
         {
-        /*
-        case 'h':
-            cout << "help \"your question's subject\"\nif you want more info on a command or anything else,write it after the help command,obviously this is a program so your word must be exact and clear.. and also defined." << endl;
-            break;*/
         case 'o':
             cout << "out \"string\"\nwrites all that is written after the command to console\noutv [variable name]\nwrites the variable\'s content to console\nto the end of any \"command\" an \'e\' can be added which represents endline\nPlease NOTE That when running a script commands don't automatically add an endline when writing to the console thus you should add an \'e\' if you want an endline!" << endl;
             break;
@@ -129,7 +127,8 @@ int main(int argc,char*argv[])
             cout << "delete [variable name]\ndeletes or removes the variable which its name is given; Please NOTE That this will not free up space in the memory but it just removes the variable name! if you want to free up do \"optimize\" after using delete this will free up memory as much as it can!" << endl;
             break;
         case 'k':
-            cout << "take [variable name] [from index] [amount]\nthe remove command or opposite of insert/put, it erases as many as amount specifies from the given index; Please NOTE That the formula is not from index to index but is from index and how many!" << endl;
+            cout << "remove [variable name] [from index] [amount]\nthe remove/take command or opposite of insert/put, it erases as many as amount specifies from the given index; Please NOTE That the formula is not from index to index but is from index and how many!" << endl;
+            break;
         case 's':
             cout << "set [variable name] [optional:content]\nsets the contents of a variable.\nPlease NOTE That it will erase the contents of a variable ,if not given what to set the variables content to" << endl;
             break;
